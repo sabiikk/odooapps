@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netilligence - Odoo Gold Partner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this in your <head> section -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+        </style>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background:#1B437B;
+    flex-wrap: wrap;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 50px;
+}
+
+.header div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Phone link styling */
+.header a {
+    color: #333;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 150px
+   
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img {
+        max-width: 90%;
+        margin-left: 20px;
+    }
+
+    .header div {
+        margin-top: 10px;
+    }
+
+    .header a {
+        display: none; 
+        
+       
+    }
+}
+
+
+        .hero {
+            background-image: url(./assets/Background.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+            position: relative;
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+
+        }
+
+        .hero-title {
+            font-size: 55px;
+            margin-bottom: 20px;
+            position: relative;
+            font-family: "Caveat", serif;
+            font-weight: 800;
+            margin-top: -130px;
+            font-size: 2rem;
+    color: white;
+    max-width: 700px;
+    line-height: 1.4;
+        }
+        
+.hero-text {
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.vector-icon {
+    width: 60px;
+    position: absolute;
+    
+}
+
+.corner-img {
+    width: 60px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-right: 570px;
+   
+   
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 40px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        font-size: 1.7rem;
+    }
+
+    .corner-img {
+        width: 80px;
+    }
+}
+        .services-title1{
+            font-family: "Caveat", serif;
+            font-size: 55px;
+        }
+        .Vector{
+            position: absolute;
+            width: 30px;
+          
+            
+        }
+
+        .hero-accent {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .highlight-text {
+            background-color: #FFD700;
+            padding: 5px 15px;
+            display: inline-block;
+        }
+
+        .feature-cards {
+            display: flex;
+            gap: 20px;
+            padding: 20px 10%;
+            margin-top: -60px;
+            position: relative;
+            margin-left: 33px;
+        }
+
+        .feature-card {
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            color: #002147;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .feature-cards {
+                padding: 20px;
+                justify-content: center;
+                
+            }
+
+            .feature-card {
+                padding: 15px;
+            }
+
+            .feature-card h3 {
+                font-size: 16px;
+            }
+
+            .card-icon img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .card-icon {
+            color: #1a4674;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            padding: 40px 10%;
+            text-align: center;
+            line-height: 1.6;
+      
+           
+        }
+
+        .reports-section {
+            display: flex;
+            gap: 20px;
+            padding: 20px 10%;
+        }
+
+        .report-card {
+    flex: 1;
+    text-align: left;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 16px; /* Add some padding inside the card */
+    background-color: #fff; /* White background */
+}
+
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .demo-btn {
+            background-color: #1a4674;
+            color: white;
+        }
+
+        .watch-btn {
+            color: #1a4674;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .features-tabs {
+            padding: 20px 10%;
+            text-align: center;
+            background-color: #F8FBFF;
+        }
+
+        .tab-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .tab-btn.active {
+            background-color: #1a4674;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        .feature-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h4 {
+            color: #002147;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .services-section {
+            padding: 40px 10%;
+            text-align: center;
+            background-color: #F8FBFF;
+        }
+
+        .services-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .support-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    margin-top: 65px;
+}
+
+.support-content {
+    max-width: 500px;
+    
+}
+
+.support-title-accent img {
+    width: 60px; /* Adjusted size */
+    margin-top: -50px; /* Controlled negative margin */
+}
+
+.free-support-title {
+    font-size: 55px;
+    color: #1B437B;
+    font-weight: 700;
+    font-family: "Caveat", serif;
+}
+
+.support-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2B363B;
+}
+
+.support-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .support-section {
+        flex-direction: column;
+       
+    }
+
+    .support-title-accent img {
+        width: 50px;
+        margin-top: -30px;
+    }
+
+    .free-support-title {
+        font-size: 55px;
+        
+    }
+
+    .support-content p {
+        font-size: 10px;
+    }
+
+    .support-image img {
+        max-width: 300px;
+    }
+}
+
+        .button-container {
+    display: flex;
+    justify-content: center; /* Center elements */
+    gap: 20px; /* Add space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+    padding: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.demo-btn {
+    background-color: #1a4674;
+    color: white;
+}
+
+.watch-btn {
+    background-color: white;
+    color: #1a4674;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.play-icon {
+    color: Orange;
+    font-size: 18px;
+}
+.arrow_doodle_3 {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically (if needed) */
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.arrow_doodle_3 img {
+    max-width: 100%; /* Ensures it scales with the screen */
+    height: auto;
+}
+.tab-buttons {
+    display: flex;
+    gap: 10px; 
+    padding: 10px;
+  
+    border-radius: 8px;
+}
+
+.tab-btn {
+    border: 2px solid #d1d5db; /* Light gray border */
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-btn.active {
+    background-color: #1e3a8a; /* Dark blue background */
+    color: white;
+    border-color: #1e3a8a;
+}
+
+.tab-btn:hover {
+    background-color: #e2e8f0; /* Light gray hover effect */
+    border-color: #a1a1aa;
+}
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row on large screens */
+    max-width: 300px; 
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .feature-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        flex: 1 1 100%; /* 1 item per row on smaller screens */
+    }
+}
+.servicesabout {
+    font-size: 18px;  /* Default font size */
+    line-height: 1.6; 
+    text-align: center;
+    max-width: 950px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .servicesabout {
+        font-size: 16px; /* Slightly smaller font on tablets */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicesabout {
+        font-size: 14px; /* Even smaller font for mobile */
+        text-align: left; /* Align left for better mobile experience */
+        padding: 10px;
+    }
+}
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            justify-content: center;
+        }
+        .service-box {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 450px;
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            background: #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+        .service-content {
+            flex: 1;
+        }
+        h3 {
+            margin: 0;
+            color: #003366;
+            font-size: 18px;
+        }
+        p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .service-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background: #ff5733;
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+        }
+        /* Unique Colors for Icons */
+        .customization .icon { background: #003366; }
+        .implementation .icon { background: #ff6600; }
+        .migration .icon { background: #0099cc; }
+        .training .icon { background: #663399; }
+        .consultancy .icon { background: #cc0000; }
+        .mobile .icon { background: #666; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-box {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            .icon {
+                margin-bottom: 10px;
+            }
+        }
+
+        .hero-text {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.hero-text img {
+    width: 490px;  /* Adjust based on preference */
+    max-width: 550px; /* Prevents it from getting too big */
+    height: auto;
+}
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1rem;
+    }
+    
+    .hero-text img {
+        width: 90%;
+    }
+}
+ /* Hide radio buttons */
+ .tab-input {
+        display: none;
+    }
+
+    /* Tab buttons */
+    .tabs {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .tab-label {
+        padding: 10px 20px;
+        background: #f5f5f5;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #333;
+        transition: 0.3s;
+    }
+
+    /* Active tab styles */
+    #tab1:checked ~ .tabs .tab-label[for="tab1"],
+    #tab2:checked ~ .tabs .tab-label[for="tab2"],
+    #tab3:checked ~ .tabs .tab-label[for="tab3"],
+    #tab4:checked ~ .tabs .tab-label[for="tab4"] {
+        background: #1a237e;
+        color: white;
+    }
+
+    /* Tab content */
+    .tab-content-container {
+        /* padding: 20px; */
+        border-radius: 10px;
+        /* background: #f9f9f9; */
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    /* Show the selected tab content */
+    #tab1:checked ~ .tab-content-container #features-content,
+    #tab2:checked ~ .tab-content-container #screenshots-content,
+    #tab3:checked ~ .tab-content-container #release-content,
+    #tab4:checked ~ .tab-content-container #faqs-content {
+        display: block;
+    }
+
+
+
+    .feature-item {
+        background: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-item img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    /* Screenshots */
+    .screenshot-item {
+    position: relative;
+    display: inline-block;
+}
+
+.screenshot-image {
+    position: relative;
+}
+
+.screenshot-image img {
+    width: 100%; /* Ensure the image takes full width */
+    height: auto;
+}
+
+.screenshot-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.screenshot-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.screenshot-content p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+    
+
+    @media (max-width: 768px) {
+        .screenshot-item {
+            flex-direction: column !important;
+            text-align: center;
+        }
+
+        .screenshot-image img {
+            max-width: 100%;
+        }
+
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .tabs {
+    display: flex;
+    gap: 20px;
+    margin: 20px auto;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+   
+}
+
+.tab-label {
+    padding: 12px 24px;
+    background: #f0f0f0;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.tab-label:hover {
+    background: #e0e0e0;
+    color: #000;
+}
+
+.tab-input {
+    display: none;
+}
+
+/* Active Tab Styling */
+#tab1:checked ~ .tabs .tab-label[for="tab1"],
+#tab2:checked ~ .tabs .tab-label[for="tab2"],
+#tab3:checked ~ .tabs .tab-label[for="tab3"],
+#tab4:checked ~ .tabs .tab-label[for="tab4"] {
+    background: #1a237e;
+    color: white;
+    border-bottom: 3px solid #1a237e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .tab-label {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+}
+.faq-container {
+           width: 100%;
+            margin: 50px auto;
+            /* background: #fff; */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-button {
+            font-size: 18px;
+            font-weight: 500;
+            background: #f8f9fa;
+            color: #333;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .accordion-button:hover {
+            background: #007bff;
+            color: #fff;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-item {
+            width: 100%;
+            border: none;
+            margin-bottom: 8px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .accordion-collapse {
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .accordion-body {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img width="820px" src="./assets/Group 1171275208.png" alt="Netilligence Logo">
+        <div style="display: flex; gap: 20px; align-items: center;">
+       
+            <a href="tel:+97150952473" style="color: #333; background: white; padding: 8px 10px; border-radius: 5px; text-decoration: none;">+971 50 952 4733</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-accent">
+            <img src="/api/placeholder/40/40" alt="Accent" style="width: 40px;">
+        </div>
+        <img class="corner-img" src="./assets/corner_4 1.png" alt="">
+        <h1 class="hero-title">
+            Buy From A Reliable Author:<br>
+            Odoo Gold Partner, Publishing Apps<br>
+            Since Version 8.
+        </h1>
+        <p class="hero-text">
+            <!-- <img class="vector-icon" src="./assets/Vector (1).png" alt="">  -->
+            <!-- 10+ Years of honed expertise in delivering <br> Odoo excellence -->
+             <img src="./assets/Group 1171275179.png" alt="">
+        </p>
+    </section>
+    
+
+    <div class="feature-cards">
+        <div class="feature-card">
+            <div class="card-icon">
+                <img src="./assets/Path.png" alt="Feature Icon">
+            </div>
+            <h3>Multi Branches Management  For All Application <br> Odoo Apps</h3>
+        </div>
+    
+        <div class="feature-card">
+            <div class="card-icon">
+                <img src="./assets/Path.png" alt="Feature Icon">
+            </div>
+            <h3>Manage Different Branch Unit For Single Company <br> In Odoo</h3>
+        </div>
+    </div>
+    
+
+    <div style="font-size: 18px;text-align: left;" class="description">
+        <p style="font-size: 16px;">Do you have multiple unit for single company? Do you want them to works as separate entity inside the company? Here you go,<br>
+            This multiple branch management Odoo apps helps users to make different branches for single company with branch <br>
+            concept which works as multi-company environment.</p>
+        <p style="margin-top: 5px; font-size: 16px;">Also Don't worry about the access rights too, We have added branch user/manager roles inside the Odoo module, Branch user <br>
+             can only access records of its specific branch and Branch manager can see records of all branches. Branch functionality added <br>
+              to Sales Data, Purchase Data, Invoice/Billing, Accounting, Warehouse and Products etc.</p>
+
+              <p style="margin-top: 10px;font-size: 16px;">You can also manage multiple branch with multi company environment. For each company you can add several branches also <br>
+                 multi company rules is already applied on branch object, so if user don't have access of company then that user can't have <br>
+                  access of branch of that specific company.
+            </p>
+            <p style="margin-top: 10px;font-size: 16px;">Multi branch Odoo apps works for both community and enterprise edition with all generic application like contact, product, sales, <br>
+                 purchase, warehouse,billing, accounting etc. We have other separate apps available for Manufacturing,Projects, Subscription, <br>
+                  Helpdesk etc, you can see that on Odoo store and If you can't see it contact us, we will help you on that. <br>
+                If you are using Odoo enterprise edition and don't want to use specific application i.e Purchase or Sales, then don't worry we will <br>
+                 simply remove that dependency for you without any extra cost.</p>
+    </div>
+
+    <div class="reports-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="report-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h3>Looking For Multiple Branch Accounting Enterprise <br>
+                 Reports Apps, Please Check Below Module Link</h3>
+            <h5 style="margin-top: 5px;text-decoration: underline;color: #E4A900;font-size: 15px;">
+                <a style="color:#E4A900;" href="">Financial Reports For Branch -Enterprise Edition Odoo Apps.</a>
+            </h5>
+        </div>
+    
+        <div class="report-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <h3 style="font-size: 18px;">Looking For Multiple Branch Accounting Community <br>
+                 Reports Apps, Please Check Below Module Link</h3>
+            <h5 style="margin-top: 5px;text-decoration: underline;color: #E4A900;font-size: 15px;">
+                <a style="color:#E4A900;" href="">Multiple Branch Accounting Community Reports Odoo Apps.</a>
+            </h5>
+            <!-- <a href="#" class="button demo-btn">Demo Request</a> -->
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <a href="#" class="button demo-btn">Demo Request</a>
+        <a href="#" class="button watch-btn">
+            <span style="color: Orange;" class="play-icon">▶</span> Watch Tutorial
+        </a>
+    </div>
+
+    <div class="arrow_doodle_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <img src="./assets/arrow_doodle_3 1.png" alt="">
+    </div>
+    
+
+    <div class="features-tabs">
+        <!-- Hidden Radio Buttons -->
+        <input type="radio" name="feature-tabs" id="tab1" class="tab-input" checked>
+        <input type="radio" name="feature-tabs" id="tab2" class="tab-input">
+        <input type="radio" name="feature-tabs" id="tab3" class="tab-input">
+        <input type="radio" name="feature-tabs" id="tab4" class="tab-input">
+    
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <label class="tab-label" for="tab1">Features</label>
+            <label class="tab-label" for="tab2">Screenshots</label>
+            <label class="tab-label" for="tab3">Release Note</label>
+            <label class="tab-label" for="tab4">FAQs</label>
+        </div>
+    
+        <!-- Tab Content -->
+        <div class="tab-content-container">
+            <!-- Features Tab Content -->
+            <div id="features-content" class="tab-content"> 
+               <div class="features-grid">
+    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./assets/branch 5.png" alt="Multi Branch">
+        <h4>Multi Branch Concept</h4>
+        <p>It allows you to create Multiple Branch/Unit, Working as multi branch concept same as Odoo's multi company environment.</p>
+    </div>
+    
+    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img src="./assets/workflow 1.png" alt="Workflow">
+        <h4>Complete Workflow For Branch</h4>
+        <p>Branch functionality added to Sales, Purchase, Invoice, Warehouse, Access group created for branch manager and branch user with specific branch.</p>
+    </div>
+    
+    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="./assets/dashboard 1.png" alt="Reports">
+        <h4>Print Branch Details On Reports</h4>
+        <p>User can print sale, purchase picking invoice, bill, payment, manufacturing order report with branch details like logo, name, address, phone etc.</p>
+    </div>
+    
+    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img src="./assets/procedure 1.png" alt="Prefix">
+        <h4>Set Branch Prefix To Document Sequence</h4>
+        <p>On documents sequence, selected branch's prefix will applied like sale, purchase, picking, invoice, payment, etc.</p>
+    </div>
+</div>
+
+            </div>
+    
+            <!-- Screenshots Tab Content -->
+            <div id="screenshots-content" class="tab-content">
+                <div class="screenshot-container">
+
+                    <div class="screenshot-item">
+                        <div class="screenshot-image">
+                            <h3> <strong>Set Shipping Method</strong> </h3>
+                            <p><strong>User can set a free delivery option in the shipping method.</strong></p>
+                            <br>
+                            <img style="border-radius: 10px; border: 10px solid #000000" src="./assets/2_wesite_delivery.png" alt="Set Shipping Method">
+                            
+                        </div>
+                    </div>
+                    
+    <hr>
+                    <div class="screenshot-item">
+                        <div class="screenshot-image">
+                            <h3><strong>Added Product into Cart</strong></h3>
+                            <p><strong>User can add products into the cart and proceed to checkout.</strong></p>
+                            <br>
+                            <img style="border-radius: 10px; border: 10px solid #000000"  src="./assets/3_wesite_delivery.png" alt="Added Product into Cart">
+                        </div>
+                      
+                    </div>
+    <hr>
+                    <div class="screenshot-item">
+                        <div class="screenshot-image">
+                            <h3><strong>Set Shipping Method</strong> </h3>
+                            <p><strong>User can set a free delivery option in the shipping method.</strong></p>
+                            <br>
+                            <img style="border-radius: 10px; border: 10px solid #000000" src="./assets/4_wesite_delivery.png" alt="Set Shipping Method">
+                        </div>
+                       
+                    </div>
+<hr>
+                    <div class="screenshot-item">
+                        <div class="screenshot-image">
+                            <h3><strong>Added Product into Cart</strong></h3>
+                            <p><strong>User can add products into the cart and proceed to checkout.</strong></p>
+                            <br>
+                            <img style="border-radius: 10px; border: 10px solid #000000;" src="./assets/2_wesite_delivery.png" alt="Added Product into Cart">
+                        </div>
+                      
+                    </div>
+                    <hr>
+                </div>
+            </div>
+    
+            <!-- Release Notes Tab Content -->
+            <div id="release-content" class="tab-content" style="margin-top: 30px; border-radius: 20px;">
+                <h2>Release Notes</h2>
+                <div class="col-12 px-0 pb-lg-5 position-relative overflow-hidden" style="border-radius: 20px;">
+                    <div class="row position-relative pt-lg-5 px-lg-5 pb-lg-3 p-md-4 p-3 mx-auto d-flex align-items-center" 
+                         style="color: #333333; font-weight: 500; font-size: 16px; width: 95%;">
+                        <div class="container" style="max-width: 1320px;">
+                            <div class="row" style="display: flex; flex-wrap: wrap; padding: 35px 35px;">
+                                
+                                <!-- Version Start -->
+                                <div class="row mb-3 pt-3 pb-3 text-center">
+                                    <div class="col-md-6 themed-grid-col">
+                                        <h3 class="mbr-section-subtitle mbr-fonts-style display-5" 
+                                            style="line-height: 139%; font-size: 1.5rem; word-break: break-word; 
+                                                   word-wrap: break-word; font-weight: 400;">
+                                            <strong style="font-weight: bold; line-height: 139%;"> 
+                                                Version : <code style="font-size: 1.3rem; color: red;"> 18.0.0.0 </code>
+                                            </strong>
+                                            <br>
+                                            <span class="font-italic" style="font-style: italic;"> Initial release of the app</span>
+                                        </h3>
+                                    </div>
+                                    <div class="col-md-6 themed-grid-col">
+                                        <p style="font-style:normal; font-weight:normal; font-size:18px; 
+                                                  line-height:162.5%; text-align:center; color:#000000">
+                                           21 October 2024
+                                        </p>
+                                    </div>
+                                    <hr style="height: 0.3rem; width: 90%; color: black; margin-left: 75px;">
+                                </div>
+                                <!-- Version End -->
+            
+                                <div class="row mb-3 pt-3 pb-3 text-center">
+                                    <div class="col-md-6 themed-grid-col">
+                                        <h3 class="mbr-section-subtitle mbr-fonts-style display-5" 
+                                            style="line-height: 139%; font-size: 1.5rem; word-break: break-word; 
+                                                   word-wrap: break-word; font-weight: 400;">
+                                            <strong style="font-weight: bold; line-height: 139%;"> 
+                                                Version : <code style="font-size: 1.3rem; color: red;"> 18.0.0.1 </code>
+                                            </strong>
+                                            <br>
+                                            <span class="font-italic" style="font-style: italic;">Fix module installation error</span>
+                                        </h3>
+                                    </div>
+                                    <div class="col-md-6 themed-grid-col">
+                                        <p style="font-style:normal; font-weight:normal; font-size:18px; 
+                                                  line-height:162.5%; text-align:center; color:#000000">
+                                         29 October 2024   .
+                                        </p>
+                                    </div>
+                                    <hr style="height: 0.3rem; width: 90%; color: black; margin-left: 75px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <!-- More Features Tab Content -->
+            <div id="faqs-content" class="tab-content">
+                <div class="container">
+                    <div class="faq-container">
+                        
+                        <div class="accordion" id="faqAccordion">
+                
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Can I Use this module with Odoo Online?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        This Odoo app cannot be used with Odoo Online (SaaS).
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Do I get free support when I buy an App?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, 60 Days Free Support is provided with the module in case of any bug or issue.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Do I have to buy the module for each version?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, starting from version 13.0, each module version is sold separately.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                        How can I install the module I bought?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Copy the module from the zip file to your addons folder. If installing in an existing database, enable Technical Features and update the Modules List.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- FAQ 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                        The module I bought doesn't work. What should I do?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Please raise a ticket at <a href="mailto:support@browseinfo.in">support@browseinfo.in</a>, and we will get back to you shortly.
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        
+                <!-- Screenshots Tab Content -->
+                <div id="screenshots-content" class="tab-content">
+                    <div class="screenshot-container">
+                        <div class="screenshot-item">
+                            <div class="screenshot-image">
+                                <img src="./assets/1_wesite_delivery.png" alt="Set Shipping Method">
+                            </div>
+                            <div class="screenshot-content">
+                                <h3>Set Shipping Method</h3>
+                                <p>User can set a free delivery option in the shipping method.</p>
+                            </div>
+                        </div>
+        
+                        <div class="screenshot-item">
+                            <div class="screenshot-image">
+                                <img src="./assets/2_wesite_delivery.png" alt="Added Product into Cart">
+                            </div>
+                            <div class="screenshot-content">
+                                <h3>Added Product into Cart</h3>
+                                <p>User can add products into the cart and proceed to checkout.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Release Notes Tab Content -->
+                <div id="release-content" class="tab-content">
+                    <h2>Release Notes</h2>
+                    <p>Here you can add your release notes content.</p>
+                </div>
+        
+                <!-- More Features Tab Content -->
+                <div id="faqs-content" class="tab-content">
+                    <h2>More Features</h2>
+                    <p>Details about additional features.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="services-section">
+        <div class="services-title">
+            <h2 class="services-title1" >Our Services</h2>
+            <img src="./assets/circle 1.png" alt="Service Title Decoration" style="position: absolute; bottom: -1px; left: 71%; transform: translateX(-50%);">
+        </div>
+        <p class="servicesabout">All our services are quality-oriented. To give our customers the best delivery, we operate with six main services. <br>
+             Netilligence is a brand that provides exquisite services to boost business growth. Stay confident when working <br>
+              with us because that will give you a chance to stay ahead of your competition.</p>
+       
+      
+            <!-- Repeat similar structure for other services -->
+            <div class="container">
+                <div class="service-box customization" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon"><i class="fas fa-cogs"></i></div>
+                    <div class="service-content">
+                        <h3>Odoo Customization</h3>
+                        <p>Perfect workflows for maximum efficiency and boost productivity with custom-made Odoo features.</p>
+                    </div>
+                </div>
+            
+                <div class="service-box implementation" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                    <div class="service-content">
+                        <h3>Odoo Implementation</h3>
+                        <p>Our experts handle the entire Odoo setup process, from configuration to data import and training.</p>
+                    </div>
+                </div>
+            
+                <div class="service-box migration" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <div class="service-content">
+                        <h3>Odoo Migration</h3>
+                        <p>We migrate your business data for a smooth and efficient transition to Odoo.</p>
+                    </div>
+                </div>
+            
+                <div class="service-box training" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="service-content">
+                        <h3>Odoo Training & Support</h3>
+                        <p>Leverage Odoo with expert guidance and best practices for your business journey.</p>
+                    </div>
+                </div>
+            
+                <div class="service-box consultancy" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="icon"><i class="fas fa-comments"></i></div>
+                    <div class="service-content">
+                        <h3>Odoo Consultancy</h3>
+                        <p>We develop custom Odoo modules to meet unique business needs and integrate with existing systems.</p>
+                    </div>
+                </div>
+            
+                <div class="service-box mobile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="service-content">
+                        <h3>Odoo Mobile Apps</h3>
+                        <p>Develop mobile apps for on-the-go access to critical data and functionalities.</p>
+                    </div>
+                </div>
+            </div>
+            
+     
+        
+    </section>
+
+    <section class="support-section">
+        <div class="support-content">
+            <div style="margin-top: -80px;" class="support-title-accent" data-aos="fade-up" data-aos-duration="1000">
+                <img style="margin-top: -38px;" src="./assets/corner_4 1.png" alt="Accent">
+            </div>
+        
+            <h2 class="free-support-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Get Support, For Free!</h2>
+            
+            <img style="width: 140px;" src="./assets/Vector (1).png" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+            
+            <p style="color: #1B437B;font-size: 28px;position: relative;margin-top: -20px;font-weight: 500;margin-left: 30px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">60 Days Free Support</p>
+            
+            <p style="font-size: 16px;line-height: 26px;font-weight: 400;color: #2B363B;margin-top: 5px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                In case any bugs or issue (Except data recovery) <br>
+                At Netilligence we offer end to end solution for Odoo services. Which <br>
+                includes analysis & consultation on the workflows and integration part
+            </p>
+        
+            <p style="color: #1B437B;font-size: 25px;font-weight: 600;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Have Any Question?</p>
+        
+            <p style="color: #2B363B; margin-top: 15px; font-size: 20px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <i class="fa-solid fa-phone-volume" style="margin-right: 10px;"></i> +971 50 952 4733
+            </p>
+            
+            <p style="color:  #2B363B;margin-top: 15px;font-size: 20px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                <i class="fa-regular fa-envelope" style="margin-right: 10px;"></i>sales@netilligence.io
+            </p>
+        </div>
+        
+        <div class="support-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+            <img style="width: 400px;" src="./assets/Group (2).png" alt="Support Representative">
+        </div>
+        
+    </section>
+   
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init(); // Initialize AOS animations
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
